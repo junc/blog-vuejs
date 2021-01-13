@@ -1,0 +1,82 @@
+
+.Header {
+  max-width: $content-width;
+  padding: $content-padding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  margin: auto;
+  // display: flex;
+
+  &__Main {
+    margin-bottom: 20px;
+    display: flex;
+
+    .Header__List {
+      margin-left: auto;
+    }
+  }
+
+  &__Logo a {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.2em !important;
+
+    text-transform: uppercase !important;
+    color: #111 !important;
+  }
+
+  &__List {
+    list-style: none;
+    margin: auto 0;
+    display: flex;
+
+    li {
+      display: inline-block;
+
+      a {
+        margin-right: 20px;
+        display: inline-block;
+        
+        text-decoration: none;
+        font-weight: bold;
+        color: $color-text-neutral;
+      }
+    }
+  }
+
+  &__Navigation &__List li a {
+    text-transform: uppercase;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #43464a;
+
+    color: $color-text-neutral;
+    font-weight: bold;
+
+    line-height: 1.1rem;
+
+    transition: color .2s ease;
+
+    &:hover {
+      color: #111;
+      color: $color-main;
+    }
+  }
+
+  a.Header__LinkActive,
+  .Header__LinkActive {
+    color: #111;
+  }
+}
+
+@media (max-width: 570px) {
+  .Header__List {
+    display: block;
+  }
+}
+

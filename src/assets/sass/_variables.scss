@@ -1,0 +1,45 @@
+
+// Colors
+$color-main: #3e4fb1;
+$color-main-link: #3e4fb1;
+
+$color-text-selected: #fff;
+$color-text-selected-bg: #000;
+
+$color-text-neutral: #d2d6e0;
+
+$color-title: #fff4c5;
+$color-title: transparent;
+$color-title-hover: #c7ffda;
+$color-title-hover: #c4fff7;
+
+
+// Fonts and text sizes
+$font-family: 'PT Sans', 'Open Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$font-family-caption: 'Playfair Display', $font-family;
+$font-family-content: 'Georgia', $font-family;
+
+
+// Containers width and same things
+$content-width: 900px;
+$content-padding-height: 15px;
+$content-padding-width: 30px;
+$content-padding: $content-padding-height $content-padding-width;
+
+
+// Cols
+$col-1-width: 8.333333333333334%;
+$col-2-width: $col-1-width * 2;
+$col-3-width: 25%;
+$col-4-width: $col-1-width * 4;
+$col-5-width: $col-1-width * 5;
+$col-6-width: 50%;
+$col-7-width: $col-1-width * 7;
+$col-8-width: $col-1-width * 8;
+$col-9-width: 75%;
+$col-10-width: $col-1-width * 10;
+$col-11-width: $col-1-width * 11;
+$col-12-width: 100%;
+
+$col-margin-vertical: $content-padding-height / 2;
+$col-margin-horizontal: $content-padding-width / 2;

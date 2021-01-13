@@ -1,0 +1,53 @@
+
+@keyframes HomeLoader__Spinner {
+  0%   { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+
+.HomeLoader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 10000;
+
+  background: rgba(255, 255, 255, .95);
+
+  transition: all 200ms ease;
+
+  &__Spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &:before {
+      content: "";
+      position: absolute;
+
+      border: 2px solid $color-main;
+      border-top-color: transparent;
+      padding: 10px;
+      border-radius: 100%;
+
+      margin-top: -10px;
+      margin-left: -10px;
+
+      animation: HomeLoader__Spinner .5s linear;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+// Vue transition classes
+.HomeLoader-enter,
+.HomeLoader-leave-to {
+  opacity: 0;
+}
+

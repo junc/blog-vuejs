@@ -1,0 +1,18 @@
+
+.Footer {
+  max-width: $content-width;
+  padding: $content-padding;
+  margin: 30px auto;
+  // text-align: center;
+
+  color: $color-text-neutral;
+  font-weight: bold;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
